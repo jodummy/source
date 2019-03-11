@@ -1,7 +1,5 @@
 package exam;
 
-import javax.print.attribute.standard.ReferenceUriSchemesSupported;
-
 public class test {
 
 	static String result(String num) {

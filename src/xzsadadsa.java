@@ -1,23 +1,20 @@
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Random;
 
 public class xzsadadsa {
 
-	static void method1(int a, int b) {
-		System.out.println(a + b);
-	}
-
 	public static void main(String[] args) {
-		System.out.println("sdasd");
-		int a = 10, b = 8;
-		method1(a, b);
-//		ArrayList<Integer> arr =  new ArrayList<>();
-//		arr.add(e);
-		
-//		Map<String, Integer> map = new Map<String, Integer>;
-		
-//		map.put(key, value)
-		String str = "sadfadfadf";
-		
+		Random ran = new Random();
+		int[] arr = new int[6];
+		for (int i = 0; i < 30; i++) {
+			int num = ran.nextInt(6) + 1;
+			arr[num-1]++;
+			
+		}
+		for (int i = 0; i < 6; i++) {
+			System.out.println(i+1 + ":" + arr[i]);
+		}
+
 	}
 }
