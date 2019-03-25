@@ -14,6 +14,8 @@ public class Example3 {
 			System.out.print(value + " ");
 			if(this.next != null ) next.printAll();
 		}
+		
+		
 	}
 
 	public static void main(String[] args) {

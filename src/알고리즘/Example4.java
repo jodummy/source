@@ -12,15 +12,26 @@ public class Example4 {
 
 		public void printAll() {
 			System.out.print(value + " ");
-			if(this.next != null) this.next.printAll();
+			if (this.next != null)
+				this.next.printAll();
 		}
-		
-		
-		//남수 help
+
+		// 남수 help
 		public void addTail(int value) {
-			if(this.next != null) next.addTail(value);
-			else next = new Node(value, null);
+			if (this.next != null) {
+				next.addTail(value);
+				System.out.println(next.toString());
+			} else {
+				next = new Node(value, null);
+				System.out.println(this.value + "  " + next.toString());
+			}
 		}
+
+		@Override
+		public String toString() {
+			return "Node [value=" + value + ", next=" + next + "]";
+		}
+
 	}
 
 	public static void main(String[] args) {
